@@ -3,44 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <title>Amer Rehan Syed</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 600px;
+      background: #fff;
+      margin: 40px auto;
+      border-radius: 22px;
+      padding: 2.5em 2em;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+      text-align: center;
+    }
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 6px solid #f4f4f4;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      margin-bottom: 1em;
+    }
+    h1 {
+      color: #5c6bc0;
+      font-weight: 600;
+    }
+    .desc {
+      color: #333;
+      font-size: 1em;
+      margin: 1.2em 0 2em 0;
+      line-height: 1.55;
+    }
+    .btns a {
+      margin: 0 0.5em;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      padding: 0.7em 1.4em;
+      border-radius: 30px;
+      font-size: 1em;
+      display: inline-block;
+      transition: background 0.2s;
+    }
+    .btn-linkedin { background: #0077b5; }
+    .btn-linkedin:hover { background: #005582; }
+    .btn-github { background: #333; }
+    .btn-github:hover { background: #222; }
+    .btn-resume { background: #f9d923; color: #333; }
+    .btn-resume:hover { background: #e6be13; }
+  </style>
 </head>
 <body>
-  <header>
+  <div class="container">
+    <img src="me_new.jpg" alt="Photo" class="profile-img">
     <h1>Amer Rehan Syed</h1>
-    <h2>CPU Physical Design Engineer at Intel</h2>
-  </header>
-  <section id="about">
-    <h3>About</h3>
-    <p>MS CE grad | UT Dallas | Hardware, automation, and AI integration specialist.</p>
-  </section>
-  <section id="experience">
-    <h3>Experience</h3>
-    <ul>
-      <li><b>CPU Physical Design Engineer, Intel</b> (2024–present)</li>
-      <li><b>Webmaster, IEEE Dallas CAS</b> (2023)</li>
-      <!-- Add more positions as needed -->
-    </ul>
-  </section>
-  <section id="skills">
-    <h3>Skills & Certifications</h3>
-    <ul>
-      <li>Tools: PrimeTime, Design Compiler, Innovus, HSpice, GEM5</li>
-      <li>Programming: Python, Verilog, Shell scripting</li>
-      <li>Certifications: Cadence RTL to GDSII, VHDL, etc.</li>
-    </ul>
-  </section>
-  <section id="publications">
-    <h3>Publications</h3>
-    <ul>
-      <li>Peer-reviewed papers in IEEE and Springer</li>
-      <!-- Add more as needed -->
-    </ul>
-  </section>
-  <footer>
-    <h3>Contact</h3>
-    <p>Email: your.email@domain.com</p>
-    <p>LinkedIn: linkedin.com/in/yourprofile</p>
-  </footer>
+    <div class="desc">
+      Graduate Student in Electrical Engineering focused on Power Electronics and Energy Systems at University of Texas at<br>
+      Researching DC-DC converters, planar transformers, and motor drive systems at UT Dallas.<br>
+      MATLAB/Simulink and Arduino . <br>
+      Passionate about converter optimization, advanced motor control, and hardware-software integration.<br>
+
+    </div>
+    <div class="btns">
+      <a class="btn-linkedin" href="https://www.linkedin.com/in/syed-amer-rehan/" target="_blank">LinkedIn</a>
+      <a class="btn-resume" href="https://drive.google.com/file/d/19DZ0p4xc4sgkSkxufLqULOvVHgk-R80y/view?usp=sharing" target="_blank">Resume</a>
+    </div>
+  </div>
 </body>
 </html>
